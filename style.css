@@ -1,22 +1,62 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 body {
   display: flex;
   flex-direction: column;
   width: 100%;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
+  padding: 0;
+  margin: 0;
 }
+html,
+body {
+  overflow-x: hidden;
+}
+/* navbar */
 .nav {
-  box-shadow: 0 0 3px rgb(0, 0, 0, 0.2);
-
-  background-color: aliceblue;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: white;
   width: 100%;
-  height: 100px;
+  height: 60px;
   display: flex;
-  justify-content: center;
   align-items: center;
+  position: fixed;
+  justify-content: space-between;
+  z-index: 1000;
+}
+.nav img{
+  width: 60px;
+  object-fit: cover;
+  margin-left: 20px;
+} 
+.logo{
+  display: flex;
+  align-items: center;
+}
+.menu{
+  display: flex;
+  align-items: center;
+  margin-right: 100px;
+}
+.menu ul {
+  list-style: none;
+  display: flex;
+  gap: 50px;
+}
+.menu li {
+  font-size: 14px;
+  font-weight: 600;
+}
+.menu a{
+  text-decoration: none;
+  color: #333;
+}
+.menu a:hover {
+  color: #6c4cf6;
 }
 /* hero */
 .hero {
@@ -24,38 +64,104 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 500px;
-  font-size: 50px;
+  height: 700px;
+  font-size: 35px;
 }
 /* content 1 */
 .content1 {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   padding-left: 50px;
   padding-right: 50px;
-  margin-top: 150px;
+  margin-top: 80px;
+  background-color: rgb(240, 243, 245);
 }
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Memusatkan elemen secara horizontal */
+  text-align: center; /* Memusatkan teks */
+  font-size: 24px;
+  margin-top: 70px;
+}
+.about p {
+  margin-top: 30px;
+  font-size: 18px;
+  font-weight: lighter;
+}
+.isi {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 150px;
+  max-width: 1200px;
+  gap: 200px;
+}
+
 .intro {
-  box-shadow: 0 0 8px rgb(0, 0, 0, 0.2);
-  border-radius: 20px;
-  padding: 40px;
-  width: 600px;
-  height: auto;
-  /* margin-left: 80px;  */
+  flex: 1;
+  max-width: 600px;
 }
+
 .intro h1 {
-  font-size: 30px;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 20px;
 }
+
 .intro p {
-  font-size: 30px;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 15px;
 }
-.profil{
-  padding-bottom: 30px;
+
+.intro strong {
+  font-weight: 600;
+  color: #000;
 }
-.foto {
-  width: 300px;
-  border-radius: 10%;
-  margin-right: 45px;
+.hubungi{
+  width: 30%;
+  padding: 15px;
+  background: #6c4cf6;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: bolder;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.skills {
+  max-width: 300px;
+}
+.skills h1 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.skill {
+  background-color: #e2dfdf;
+  padding: 15px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 700;
+}
+.skill:hover{
+  transform: scale(1.05);
+  transition: 0.05s;
+  background-color: #c3c0c0;
+}
+.skill a{
+  text-decoration: none;
+  color: #8a8a8a; 
 }
 /* content 2 */
 .content2 {
@@ -63,48 +169,284 @@ body {
   flex-direction: column;
   align-items: center;
   justify-self: center;
-  margin-top: 200px;
-  box-shadow: 0 0 8px rgb(0, 0, 0, 0.2);
-  width: 90%;
-  height: 550px;
+  margin-top: 140px;
   padding: 0;
+}
+.experience {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Memusatkan elemen secara horizontal */
+  text-align: center; /* Memusatkan teks */
+  font-size: 24px;
+  margin-bottom: 80px;
+}
+.experience p {
+  margin-top: 30px;
+  font-size: 18px;
+  font-weight: lighter;
+}
+.posting {
+  display: flex;
+  flex-direction: column;
+}
+.posting h1{
+  font-size: 20px;
+}
+.posting p{
+  font-size: 14px;  
+}
+.posting a{
+  color: #6c4cf6;
+}
+.posting a:hover{
+  color: #4228b8;
+}
+/* P1 */
+.posting1 {
+  width: 1000px;
+  max-width: 800px;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  padding: 15px;
+  border-radius: 20px;
+}
+.posting1:hover {
+  background-color: #f1f1f1;
+  transition: 0.1s;
+  box-shadow: 0 0 5px rgb(0, 0, 0, 0.2);
+}
+.posting1 img {
+  width: 200px;
+  height: 200px;
+  border-radius: 20px;
+  margin-right: 20px;
+}
+.posting1 img:hover {
+  transform: scale(1.02);
+  transition: 0.1s;
+}
+.posting1 p {
+  margin-top: 20px;
+}
+/* P2 */
+.posting2 {
+  width: 1000px;
+  max-width: 800px;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  padding: 15px;
+  border-radius: 20px;
+}
+.posting2:hover {
+  background-color: #f1f1f1;
+  transition: 0.1s;
+  box-shadow: 0 0 5px rgb(0, 0, 0, 0.2);
+}
+.posting2 img {
+  width: 250px;
+  height: 250px;
+  border-radius: 20px;
+  margin-right: 20px;
+}
+.posting2 img:hover {
+  transform: scale(1.02);
+  transition: 0.1s;
+}
+.posting2 p {
+  margin-top: 20px;
+}
+/* P3 */
+.posting3 {
+  width: 1000px;
+  max-width: 800px;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  padding: 15px;
+  border-radius: 20px;
+}
+.posting3:hover {
+  background-color: #f1f1f1;
+  transition: 0.1s;
+  box-shadow: 0 0 5px rgb(0, 0, 0, 0.2);
+}
+.posting3 img {
+  width: 250px;
+  height: 250px;
+  border-radius: 20px;
+  margin-right: 20px;
+}
+.posting3 img:hover {
+  transform: scale(1.02);
+  transition: 0.1s;
+}
+.posting3 p {
+  margin-top: 20px;
 }
 /* content 3 */
 .content3 {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-self: center;
-  margin-top: 200px;
-  box-shadow: 0 0 8px rgb(0, 0, 0, 0.2);
-  width: 90%;
-  height: 550px;
+  margin-top: 140px;
   padding: 0;
-}
-.content3 h1 {
-  margin-top: 30px;
-  font-size: 50px;
+  background-color: rgb(240, 243, 245);
 }
 .project {
-  display: flex; 
-  justify-content: center;
-  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Memusatkan elemen secara horizontal */
+  text-align: center; /* Memusatkan teks */
+  font-size: 24px;
+  margin-top: 100px;
+  width: 100%;
 }
-.project img {
-  width: 40%;
+.project p {
+  margin-top: 30px;
+  font-size: 18px;
+  font-weight: lighter;
+}
+/* PJ1 */
+.project1 {
+  width: 100%;
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 100px;
+}
+.project1 img {
+  width: 60%;
   border-radius: 20px;
+  margin-bottom: 30px;
+  display: block;
+  box-shadow: 0 0 5px rgb(0, 0, 0, 0.2);
 }
-
+.project1 img:hover {
+  transform: scale(1.01);
+  transition: 0.05s;
+  box-shadow: 0 0 100px rgb(0, 0, 0, 0.2);
+}
+.project1 h1 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #333;
+}
+.project1 p {
+  max-width: 600px;
+  font-size: 16px;
+  margin-top: 20px;
+}
+/* content 4 */
+.content4 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-self: center;
+  padding: 0;
+}
+.contactHeader {
+  font-size: 24px;
+  font-weight: bolder;
+  margin-top: 140px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.contactHeader p {
+  max-width: 700px;
+  margin-top: 30px;
+  font-size: 18px;
+  color: #777;
+  text-align: center;
+  margin-bottom: 80px;
+}
+.contact {
+  background: white;
+  border-radius: 5px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+  width: 45%;
+  padding: 30px;
+}
+.contact label {
+  font-weight: bold;
+  display: block;
+  margin: 10px 0 5px;
+  color: #555;
+}
+.contact input,
+textarea {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  background: #f0f0f0;
+  font-size: 12px;
+  margin-bottom: 30px;
+  outline: none;
+  padding: 20px;
+}
+.contact textarea {
+  width: 100%; /* Sesuaikan lebar */
+  height: 150px; /* Atur tinggi */
+  font-size: 12px; /* Sesuaikan ukuran teks */
+  resize: none; /* Opsional: Mencegah pengguna mengubah ukuran */
+}
+.contact textarea::placeholder {
+  text-align: left; /* Pastikan placeholder sejajar kiri */
+  color: gray; /* Warna placeholder */
+  font-size: 12px;
+}
+.tombol {
+  display: flex;
+  justify-content: flex-end;
+}
+.contact button {
+  width: 30%;
+  padding: 15px;
+  background: #6c4cf6;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: bolder;
+  margin-top: 10px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #580ba5;
+  transform: scale(1.03);
+  transition: 0.05s;
+}
 /* footer */
-.footer{
+.footer {
   bottom: 0;
   margin-top: 180px;
   width: 100%;
-  height: 80px;
   background-color: black;
   color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: 50px 50px 0px;
+}
+.footer-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 500px;
+  max-width: 900px;
+}
+.footer-content h1 {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.footer-content p {
+  font-size: 12px;
 }
