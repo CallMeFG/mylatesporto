@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Experience Terminal</title>
+  </head>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+    }
+    body {
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+    }
+    .nav {
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      background-color: white;
+      width: 100%;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      position: fixed;
+      z-index: 1000;
+    }
+    .nav img {
+      width: 60px;
+      object-fit: cover;
+      margin-left: 20px;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+    .hero {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+    .content {
+      background-color: rgb(240, 243, 245);
+      width: 100%;
+      margin-top: 50px;
+    }
+    .isiContent {
+      width: 80%;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    /* footer */
+    .footer {
+      bottom: 0;
+      margin-top: 180px;
+      width: 100%;
+      background-color: black;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 50px 50px 0px;
+    }
+    .footer-content {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 500px;
+      max-width: 900px;
+    }
+    .footer-content h1 {
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+    .footer-content p {
+      font-size: 12px;
+    }
+    .ikon {
+      display: flex;
+      gap: 10px;
+    }
+    .ikon img {
+      border-radius: 100px;
+      clip-path: inset(4px 4px 4px 4px); /* Atas, Kanan, Bawah, Kiri */
+    }
+  </style>
+  <body>
+    <header class="nav">
+      <div class="logo">
+        <img src="image/download-ai-brush-removebg-v5xupvjrj.png" alt="" />
+        <span style="margin-left: 10px; font-size: 14px; font-weight: 600"
+          ><p>FATHUR RIZKY ASSANI</p></span
+        >
+      </div>
+    </header>
+    <section class="hero">
+      <img
+        src="image/terminal-command-icon_hd-removebg.png"
+        alt=""
+        width="200px"
+        style="margin-top: 100px"
+      />
+    </section>
+    <section class="content">
+      <div class="isiContent">
+        <h1>Pengalaman Terhadap Terminal</h1>
+        <p>
+          Saya telah mengembangkan keterampilan dasar dalam menggunakan terminal
+          Linux melalui berbagai praktikum dan eksperimen langsung. Dari materi
+          yang saya pelajari, saya memahami struktur dasar perintah Linux yang
+          terdiri dari command, option (dimulai dengan tanda -), dan argument.
+          Saya terbiasa dengan perintah-perintah dasar seperti
+          <code>ls</code> (dengan berbagai opsi seperti -l, -a, -F),
+          <code>cd</code>, <code>mkdir</code>, <code>cp</code>, <code>mv</code>,
+          dan <code>rm</code> untuk navigasi dan manajemen file. Saya juga telah
+          mempraktikkan perintah sistem seperti <code>date</code>,
+          <code>cal</code>, <code>hostname</code>, <code>uname</code>,
+          <code>who</code>, dan <code>whoami</code> untuk memeriksa informasi
+          sistem dan pengguna.
+        </p>
+
+        <p>
+          Pengalaman saya mencakup penggunaan manual (<code>man</code>) untuk
+          mempelajari perintah baru, termasuk navigasi dalam tampilan manual
+          menggunakan spasi, tombol panah, dan pencarian teks (/teks). Saya
+          memahami pembagian bab manual dan bisa mencari perintah tertentu
+          menggunakan <code>apropos</code> dan <code>whatis</code>. Selain itu,
+          saya telah mempraktikkan manipulasi file teks dasar seperti melihat
+          isi file (<code>cat</code>, <code>more</code>), mencari teks dalam
+          file (<code>grep</code>), serta mengubah informasi pengguna dengan
+          <code>chfn</code>. Saya juga familiar dengan konsep file hidden
+          (diawali dengan .) dan bisa mengatur prompt shell menggunakan variabel
+          <code>PS1</code>.
+        </p>
+
+        <p>
+          Untuk manajemen pengguna, saya memahami cara melihat identitas
+          pengguna (<code>id</code>) dan mengkonfigurasi informasi finger. Saya
+          terus mengembangkan keterampilan terminal dengan mempelajari
+          perintah-perintah yang lebih advanced seperti pipeline (|), redirect
+          (&gt;, &gt;&gt;), dan manajemen proses. Pengalaman praktikum ini
+          memberikan saya fondasi yang kuat untuk bekerja secara efisien di
+          lingkungan command line Linux.
+        </p>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer-content">
+        <div>
+          <h1>FATHUR RIZKY ASSANI</h1>
+          <p>My Portofolio adalah website portofolio pribadi saya</p>
+        </div>
+        <div class="social">
+          <h1>SOCIAL</h1>
+          <div class="ikon">
+            <span
+              ><a href="https://github.com/CallMeFG/" target="_blank"
+                ><img src="image/github 2 hd.jpg" alt="" width="30px" /></a
+            ></span>
+            <span
+              ><a
+                href="https://www.instagram.com/rzky.sn_?igsh=MTR6YmF0anFnNjdpZg=="
+                target="_blank"
+                ><img
+                  src="image/instagram_icon hd.png"
+                  alt=""
+                  width="30px" /></a
+            ></span>
+            <span
+              ><a
+                href="https://x.com/RizkyAs_Dev?t=npf2_tY-G8UJKmAffGDLmA&s=09"
+                target="_blank"
+                ><img src="image/X_icon hd.png" alt="" width="30px" /></a
+            ></span>
+            <span
+              ><a
+                href="https://www.linkedin.com/in/fathur-rizky-assani-7348b0307?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                target="_blank"
+                ><img src="image/linked_icon hd.jpg" alt="" width="30px" /></a
+            ></span>
+          </div>
+        </div>
+      </div>
+      <span style="font-size: 10px; margin-top: 100px; margin-bottom: 20px"
+        ><p>&copy;Copyright 2025. Made by <u>Fathur Rizky Assani</u></p></span
+      >
+    </footer>
+  </body>
+</html>

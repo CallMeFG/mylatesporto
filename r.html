@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Experience R</title>
+  </head>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+    }
+    body {
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+    }
+    .nav {
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      background-color: white;
+      width: 100%;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      position: fixed;
+      z-index: 1000;
+    }
+    .nav img {
+      width: 60px;
+      object-fit: cover;
+      margin-left: 20px;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+    .hero {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+    .content {
+      background-color: rgb(240, 243, 245);
+      width: 100%;
+      margin-top: 50px;
+    }
+    .isiContent {
+      width: 80%;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    /* footer */
+    .footer {
+      bottom: 0;
+      margin-top: 180px;
+      width: 100%;
+      background-color: black;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 50px 50px 0px;
+    }
+    .footer-content {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 500px;
+      max-width: 900px;
+    }
+    .footer-content h1 {
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+    .footer-content p {
+      font-size: 12px;
+    }
+    .ikon {
+      display: flex;
+      gap: 10px;
+    }
+    .ikon img {
+      border-radius: 100px;
+      clip-path: inset(4px 4px 4px 4px); /* Atas, Kanan, Bawah, Kiri */
+    }
+  </style>
+  <body>
+    <header class="nav">
+      <div class="logo">
+        <img src="image/download-ai-brush-removebg-v5xupvjrj.png" alt="" />
+        <span style="margin-left: 10px; font-size: 14px; font-weight: 600"
+          ><p>FATHUR RIZKY ASSANI</p></span
+        >
+      </div>
+    </header>
+    <section class="hero">
+      <img
+        src="image/R-icon_hd-removebg.png"
+        alt=""
+        width="200px"
+        style="margin-top: 100px"
+      />
+    </section>
+    <section class="content">
+      <div class="isiContent">
+        <h1>Pengalaman Terhadap pemrograman R</h1>
+        <p>
+          Saya telah mengembangkan keterampilan dasar pemrograman R untuk
+          analisis data, termasuk manipulasi struktur data seperti vektor, list,
+          matrix, dan data frame. Dari contoh yang saya kerjakan, saya memahami
+          cara membuat dan mengakses elemen dalam struktur data tersebut, serta
+          melakukan operasi dasar seperti filtering (data_frame[data_frame$nilai
+          &gt;=85]), menambah kolom baru (data_frame$grade), dan menghapus baris
+          tertentu. Saya juga telah mempraktikkan penggunaan fungsi-fungsi dasar
+          R seperti sum(), paste(), dan ifelse() untuk pemrosesan data
+          sederhana.
+        </p>
+
+        <p>
+          Pengalaman saya mencakup penggunaan package dplyr dan tidyr untuk data
+          manipulation, termasuk operasi rename kolom (rename()), select kolom
+          tertentu (select()), filter data berdasarkan kondisi (filter()),
+          pengurutan data (arrange()), dan pembuatan variabel baru (mutate()).
+          Saya memahami cara menggunakan pipe operator (%&gt;%) untuk merantai
+          beberapa operasi data secara efisien. Contoh konkret termasuk analisis
+          dataset e-commerce dengan menghitung total AOV per region dan
+          rata-rata Purchase Frequency menggunakan group_by() dan summarise().
+        </p>
+
+        <p>
+          Untuk visualisasi data, saya telah mempraktikkan pembuatan berbagai
+          plot menggunakan ggplot2, termasuk scatter plot (geom_point()), line
+          plot (geom_line()), bar chart (geom_bar()), dan histogram
+          (geom_histogram()). Saya memahami cara menambahkan judul, label, dan
+          tema (labs(), theme_minimal()) serta teknik faceting (facet_wrap(),
+          facet_grid()) untuk visualisasi multidimensi. Saya juga mampu
+          melakukan kustomisasi plot dengan multiple layers seperti menambahkan
+          trendline (geom_smooth()).
+        </p>
+
+        <p>
+          Pada aspek data cleaning, saya telah mempraktikkan penanganan missing
+          value dengan metode penghapusan (na.omit()) dan imputasi mean
+          (is.na()), serta transformasi data format wide-to-long menggunakan
+          pivot_wider(). Untuk analisis statistik, saya memahami konsep dasar
+          regresi linear dan evaluasi model menggunakan metrik R-squared dan
+          RMSE, meskipun masih dalam tahap pengenalan. Saya terus mengembangkan
+          kemampuan dalam membaca data dari berbagai sumber (read_excel()) dan
+          eksplorasi data dasar (str(), summary()).
+        </p>
+
+        <p>
+          Secara keseluruhan, keterampilan R saya mencakup alur kerja analisis
+          data mulai dari import data, cleaning, manipulation, hingga
+          visualisasi dasar. Saya mampu menerapkan teknik-teknik tersebut untuk
+          menyelesaikan masalah analisis data sederhana dan menyajikan insight
+          dalam bentuk visual yang informatif. Kedepannya, saya berencana untuk
+          mempelajari teknik analisis yang lebih advance seperti time series
+          analysis dan machine learning dasar menggunakan R.
+        </p>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer-content">
+        <div>
+          <h1>FATHUR RIZKY ASSANI</h1>
+          <p>My Portofolio adalah website portofolio pribadi saya</p>
+        </div>
+        <div class="social">
+          <h1>SOCIAL</h1>
+          <div class="ikon">
+            <span
+              ><a href="https://github.com/CallMeFG/" target="_blank"
+                ><img src="image/github 2 hd.jpg" alt="" width="30px" /></a
+            ></span>
+            <span
+              ><a
+                href="https://www.instagram.com/rzky.sn_?igsh=MTR6YmF0anFnNjdpZg=="
+                target="_blank"
+                ><img
+                  src="image/instagram_icon hd.png"
+                  alt=""
+                  width="30px" /></a
+            ></span>
+            <span
+              ><a
+                href="https://x.com/RizkyAs_Dev?t=npf2_tY-G8UJKmAffGDLmA&s=09"
+                target="_blank"
+                ><img src="image/X_icon hd.png" alt="" width="30px" /></a
+            ></span>
+            <span
+              ><a
+                href="https://www.linkedin.com/in/fathur-rizky-assani-7348b0307?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                target="_blank"
+                ><img src="image/linked_icon hd.jpg" alt="" width="30px" /></a
+            ></span>
+          </div>
+        </div>
+      </div>
+      <span style="font-size: 10px; margin-top: 100px; margin-bottom: 20px"
+        ><p>&copy;Copyright 2025. Made by <u>Fathur Rizky Assani</u></p></span
+      >
+    </footer>
+  </body>
+</html>

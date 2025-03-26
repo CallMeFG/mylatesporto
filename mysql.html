@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Experience MySQL</title>
+  </head>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+    }
+    body {
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+    }
+    .nav {
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      background-color: white;
+      width: 100%;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      position: fixed;
+      z-index: 1000;
+    }
+    .nav img {
+      width: 60px;
+      object-fit: cover;
+      margin-left: 20px;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+    .hero {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+    .content {
+      background-color: rgb(240, 243, 245);
+      width: 100%;
+      margin-top: 50px;
+    }
+    .isiContent {
+      width: 80%;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    /* footer */
+    .footer {
+      bottom: 0;
+      margin-top: 180px;
+      width: 100%;
+      background-color: black;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 50px 50px 0px;
+    }
+    .footer-content {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 500px;
+      max-width: 900px;
+    }
+    .footer-content h1 {
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+    .footer-content p {
+      font-size: 12px;
+    }
+    .ikon {
+      display: flex;
+      gap: 10px;
+    }
+    .ikon img {
+      border-radius: 100px;
+      clip-path: inset(4px 4px 4px 4px); /* Atas, Kanan, Bawah, Kiri */
+    }
+  </style>
+  <body>
+    <header class="nav">
+      <div class="logo">
+        <img src="image/download-ai-brush-removebg-v5xupvjrj.png" alt="" />
+        <span style="margin-left: 10px; font-size: 14px; font-weight: 600"
+          ><p>FATHUR RIZKY ASSANI</p></span
+        >
+      </div>
+    </header>
+    <section class="hero">
+      <img
+        src="image/mysql-icon_hd-removebg.png"
+        alt=""
+        width="200px"
+        style="margin-top: 100px"
+      />
+    </section>
+    <section class="content">
+      <div class="isiContent">
+        <h1>Pengalaman Terhadap MySql</h1>
+        <p>
+          Saya telah mengembangkan keterampilan yang kuat dalam MySQL, khususnya
+          dalam menulis dan mengoptimalkan query SQL untuk berbagai operasi
+          database. Dari contoh-contoh yang saya kerjakan, saya memahami dengan
+          baik operasi dasar seperti SELECT, INSERT, UPDATE, dan DELETE, serta
+          fungsi agregasi termasuk COUNT, SUM, AVG, MIN, dan MAX. Saya telah
+          mempraktikkan penggunaan klausa WHERE untuk filtering data, GROUP BY
+          untuk pengelompokan, dan HAVING untuk memfilter hasil agregasi. Selain
+          itu, saya terbiasa dengan pengurutan data menggunakan ORDER BY (baik
+          ascending maupun descending) dan pembatasan hasil query dengan LIMIT.
+          Contoh konkret termasuk query untuk menemukan karyawan dengan gaji
+          tertinggi/terendah, menghitung rata-rata gaji per departemen, dan
+          menampilkan data dengan kriteria spesifik.
+        </p>
+
+        <p>
+          Pengalaman saya juga mencakup penggabungan tabel (JOIN) yang kompleks,
+          termasuk INNER JOIN, LEFT JOIN, dan subquery untuk mengakses data dari
+          beberapa tabel yang berelasi. Saya telah membuat query yang
+          menghubungkan tabel employees, departments, dan job_history untuk
+          mengekstrak informasi seperti riwayat pekerjaan karyawan atau daftar
+          departemen dengan gaji tertinggi. Pemahaman saya tentang alias tabel
+          (table aliasing) membantu dalam menyederhanakan query yang melibatkan
+          banyak tabel. Saya juga telah mempraktikkan penggunaan subquery baik
+          di klausa WHERE maupun FROM, seperti mencari karyawan dengan gaji di
+          atas rata-rata departemennya atau menampilkan data departemen yang
+          memiliki karyawan dengan kriteria tertentu.
+        </p>
+
+        <p>
+          Pada level desain database, saya memiliki pengalaman dalam membuat
+          diagram relasi entitas (ERD) yang mencakup entitas seperti semester,
+          matkul, professor, dan relasi antar entitas tersebut. Saya memahami
+          konsep normalisasi database hingga bentuk normal ketiga (3NF) dan
+          dapat menerapkannya dalam desain skema database. Dari diagram yang
+          saya buat, terlihat pemahaman tentang kardinalitas relasi (one-to-one,
+          one-to-many, many-to-many) dan penggunaan primary key/foreign key
+          untuk menjaga integritas referensial. Saya juga familiar dengan
+          pembuatan view untuk menyederhanakan akses data yang kompleks dan
+          penggunaan index untuk meningkatkan performa query.
+        </p>
+
+        <p>
+          Untuk operasi database yang lebih maju, saya telah mempelajari teknik
+          transaksi untuk menjaga konsistensi data, serta dasar-dasar stored
+          procedure dan trigger. Saya juga memahami pentingnya keamanan database
+          dengan menerapkan hak akses yang tepat dan sanitasi input untuk
+          mencegah SQL injection. Pengalaman saya mencakup optimasi query dengan
+          EXPLAIN untuk menganalisis execution plan, serta teknik indexing
+          strategis untuk mempercepat query pada tabel besar. Saya terus
+          mengembangkan keterampilan ini dengan mempelajari fitur-fitur MySQL
+          yang lebih canggih seperti window functions, CTE (Common Table
+          Expressions), dan partisi tabel.
+        </p>
+
+        <p>
+          Secara keseluruhan, saya memiliki fondasi yang kuat dalam SQL dan
+          administrasi database MySQL. Kemampuan saya mencakup dari desain
+          database, penulisan query kompleks, hingga optimasi performa. Saya
+          siap menerapkan keterampilan ini dalam pengembangan aplikasi berbasis
+          database yang membutuhkan manipulasi data yang efisien dan andal.
+          Kedepannya, saya berencana untuk memperdalam pengetahuan tentang
+          database clustering, replication, dan teknik backup/recovery untuk
+          skala enterprise.
+        </p>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer-content">
+        <div>
+          <h1>FATHUR RIZKY ASSANI</h1>
+          <p>My Portofolio adalah website portofolio pribadi saya</p>
+        </div>
+        <div class="social">
+          <h1>SOCIAL</h1>
+          <div class="ikon">
+            <span
+              ><a href="https://github.com/CallMeFG/" target="_blank"
+                ><img src="image/github 2 hd.jpg" alt="" width="30px" /></a
+            ></span>
+            <span
+              ><a
+                href="https://www.instagram.com/rzky.sn_?igsh=MTR6YmF0anFnNjdpZg=="
+                target="_blank"
+                ><img
+                  src="image/instagram_icon hd.png"
+                  alt=""
+                  width="30px" /></a
+            ></span>
+            <span
+              ><a
+                href="https://x.com/RizkyAs_Dev?t=npf2_tY-G8UJKmAffGDLmA&s=09"
+                target="_blank"
+                ><img src="image/X_icon hd.png" alt="" width="30px" /></a
+            ></span>
+            <span
+              ><a
+                href="https://www.linkedin.com/in/fathur-rizky-assani-7348b0307?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                target="_blank"
+                ><img src="image/linked_icon hd.jpg" alt="" width="30px" /></a
+            ></span>
+          </div>
+        </div>
+      </div>
+      <span style="font-size: 10px; margin-top: 100px; margin-bottom: 20px"
+        ><p>&copy;Copyright 2025. Made by <u>Fathur Rizky Assani</u></p></span
+      >
+    </footer>
+  </body>
+</html>
