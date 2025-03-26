@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Experience HTML&amp;CSS</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+      }
+      body {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+      }
+      .nav {
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        background-color: white;
+        width: 100%;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        position: fixed;
+        z-index: 1000;
+        padding: 0 20px;
+      }
+      .nav img {
+        width: 60px;
+        object-fit: cover;
+        margin-left: 10px;
+      }
+      .logo {
+        display: flex;
+        align-items: center;
+      }
+      .logo span {
+        margin-left: 10px;
+        font-size: 14px;
+        font-weight: 600;
+      }
+      .hero {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding-top: 80px;
+      }
+      .hero img {
+        max-width: 100%;
+        height: auto;
+      }
+      .content {
+        background-color: rgb(240, 243, 245);
+        width: 100%;
+        margin-top: 30px;
+        padding: 20px 0;
+      }
+      .isiContent {
+        width: 80%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+      .isiContent h1 {
+        font-size: 24px;
+        margin-bottom: 20px;
+      }
+      .isiContent p {
+        margin-bottom: 20px;
+        line-height: 1.6;
+        font-size: 16px;
+      }
+      code {
+        background-color: #f0f0f0;
+        padding: 2px 4px;
+        border-radius: 3px;
+        font-family: monospace;
+      }
+      /* Footer */
+      .footer {
+        width: 100%;
+        background-color: black;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 50px 20px 0;
+      }
+      .footer-content {
+        width: 100%;
+        max-width: 1000px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 30px;
+      }
+      .footer-content h1 {
+        font-size: 14px;
+        margin-bottom: 10px;
+      }
+      .footer-content p {
+        font-size: 12px;
+        max-width: 300px;
+      }
+      .social {
+        text-align: right;
+      }
+      .ikon {
+        display: flex;
+        gap: 10px;
+        justify-content: flex-end;
+      }
+      .ikon img {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+      .copyright {
+        font-size: 10px;
+        margin: 30px 0 20px;
+        text-align: center;
+      }
+
+      /* Responsive Design */
+      @media (max-width: 1024px) {
+        .isiContent {
+          width: 90%;
+        }
+        .footer-content {
+          gap: 100px;
+        }
+      }
+
+      @media (max-width: 768px) {
+        .hero img {
+          width: 150px;
+        }
+        .isiContent {
+          width: 95%;
+          padding: 15px;
+        }
+        .footer-content {
+          flex-direction: column;
+          gap: 30px;
+        }
+        .social {
+          text-align: left;
+        }
+        .ikon {
+          justify-content: flex-start;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .nav img {
+          width: 50px;
+          margin-left: 5px;
+        }
+        .logo span {
+          font-size: 12px;
+          margin-left: 5px;
+        }
+        .hero img {
+          width: 120px;
+        }
+        .isiContent h1 {
+          font-size: 20px;
+        }
+        .isiContent p {
+          font-size: 14px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="nav">
+      <div class="logo">
+        <img src="image/download-ai-brush-removebg-v5xupvjrj.png" alt="" />
+        <span><p>FATHUR RIZKY ASSANI</p></span>
+      </div>
+    </header>
+
+    <section class="hero">
+      <img
+        src="image/html-icon_hd-removebg.png"
+        alt="HTML Icon"
+        width="200px"
+      />
+    </section>
+
+    <section class="content">
+      <div class="isiContent">
+        <h1>Pengalaman Terhadap HTML</h1>
+        <p>
+          Saya telah mempelajari dan menguasai berbagai konsep dasar HTML
+          melalui platform W3Schools, dimulai dari pengenalan struktur dokumen
+          HTML, penggunaan editor, hingga penerapan elemen-elemen fundamental
+          seperti <i>headings</i>, <i>paragraphs</i>, dan <i>lists</i>.
+          Pemahaman saya mencakup cara menyusun kerangka website dengan tag
+          dasar seperti <code>&lt;html&gt;</code>, <code>&lt;head&gt;</code>,
+          dan <code>&lt;body&gt;</code>, serta memanfaatkan atribut untuk
+          menyesuaikan perilaku elemen. Selain itu, saya juga terbiasa dengan
+          teknik pemformatan teks (<i>formatting</i>) seperti tebal, miring,
+          atau garis bawah menggunakan tag <code>&lt;b&gt;</code>,
+          <code>&lt;i&gt;</code>, dan <code>&lt;u&gt;</code>, serta penggunaan
+          <i>quotations</i> dan <i>comments</i> untuk meningkatkan keterbacaan
+          kode.
+        </p>
+
+        <p>
+          Selain elemen dasar, saya telah menguasai fitur lanjutan seperti
+          pembuatan <i>links</i> dengan tag <code>&lt;a&gt;</code>, penyisipan
+          gambar melalui <code>&lt;img&gt;</code>, dan pengaturan
+          <i>favicon</i> untuk identitas visual website. Saya juga memahami
+          pentingnya pengelolaan tata letak menggunakan <i>block</i> (seperti
+          <code>&lt;div&gt;</code>) dan <i>inline elements</i>, serta penerapan
+          <i>classes</i> dan <i>id</i> untuk styling dengan CSS. Keterampilan
+          saya mencakup pembuatan tabel (<code>&lt;table&gt;</code>) untuk
+          menampilkan data terstruktur dan daftar (<code>&lt;ul&gt;</code>,
+          <code>&lt;ol&gt;</code>) untuk konten berpoin. Tidak ketinggalan, saya
+          mempelajari integrasi JavaScript dengan HTML dan penggunaan
+          <i>iframes</i> (<code>&lt;iframe&gt;</code>) untuk menyematkan konten
+          eksternal.
+        </p>
+
+        <p>
+          Pengalaman saya juga meliputi optimasi tampilan dengan CSS dasar,
+          seperti mengatur warna (<i>colors</i>), font, dan layout melalui
+          atribut <code>style</code> atau file terpisah. Saya paham cara
+          mengelola <i>file paths</i> untuk mengorganisir sumber daya (gambar,
+          CSS, JS) dan teknik <i>head</i> untuk metadata seperti judul halaman
+          (<code>&lt;title&gt;</code>) atau karakter encoding. Dengan pemahaman
+          menyeluruh ini, saya siap mengembangkan website portofolio yang
+          interaktif, terstruktur, dan responsif, sekaligus terus memperdalam
+          topik lanjutan seperti HTML5 semantik atau framework pendukung.
+        </p>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <div>
+          <h1>FATHUR RIZKY ASSANI</h1>
+          <p>
+            A Junior Web Developer with hands-on experience in frontend and backend. Skilled in creating
+            responsive interfaces, managing databases, and deploying static
+            sites via GitHub.
+          </p>
+        </div>
+        <div class="social">
+          <h1>SOCIAL</h1>
+          <div class="ikon">
+            <span
+              ><a href="https://github.com/CallMeFG/" target="_blank"
+                ><img src="image/github 2 hd.jpg" alt="" width="30px" /></a
+            ></span>
+            <span
+              ><a
+                href="https://www.instagram.com/rzky.sn_?igsh=MTR6YmF0anFnNjdpZg=="
+                target="_blank"
+                ><img
+                  src="image/instagram_icon hd.png"
+                  alt=""
+                  width="30px" /></a
+            ></span>
+            <span
+              ><a
+                href="https://x.com/RizkyAs_Dev?t=npf2_tY-G8UJKmAffGDLmA&s=09"
+                target="_blank"
+                ><img src="image/X_icon hd.png" alt="" width="30px" /></a
+            ></span>
+            <span
+              ><a
+                href="https://www.linkedin.com/in/fathur-rizky-assani-7348b0307?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                target="_blank"
+                ><img src="image/linked_icon hd.jpg" alt="" width="30px" /></a
+            ></span>
+          </div>
+        </div>
+      </div>
+      <span style="font-size: 10px; margin-top: 100px; margin-bottom: 20px"
+        ><p>&copy;Copyright 2025. Made by <u>Fathur Rizky Assani</u></p></span
+      >
+    </footer>
+  </body>
+</html>
