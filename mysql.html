@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Experience MySQL</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+      }
+      body {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+      }
+      .nav {
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        background-color: white;
+        width: 100%;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        position: fixed;
+        z-index: 1000;
+        padding: 0 20px;
+      }
+      .nav img {
+        width: 60px;
+        object-fit: cover;
+        margin-left: 10px;
+      }
+      .logo {
+        display: flex;
+        align-items: center;
+      }
+      .logo span {
+        margin-left: 10px;
+        font-size: 14px;
+        font-weight: 600;
+      }
+      .hero {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding-top: 80px;
+      }
+      .hero img {
+        max-width: 100%;
+        height: auto;
+      }
+      .content {
+        background-color: rgb(240, 243, 245);
+        width: 100%;
+        margin-top: 30px;
+        padding: 20px 0;
+      }
+      .isiContent {
+        width: 80%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+      .isiContent h1 {
+        font-size: 24px;
+        margin-bottom: 20px;
+      }
+      .isiContent p {
+        margin-bottom: 20px;
+        line-height: 1.6;
+        font-size: 16px;
+      }
+      code {
+        background-color: #f0f0f0;
+        padding: 2px 4px;
+        border-radius: 3px;
+        font-family: monospace;
+      }
+      /* Footer */
+      .footer {
+        width: 100%;
+        background-color: black;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 50px 20px 0;
+      }
+      .footer-content {
+        width: 100%;
+        max-width: 1000px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 30px;
+      }
+      .footer-content h1 {
+        font-size: 14px;
+        margin-bottom: 10px;
+      }
+      .footer-content p {
+        font-size: 12px;
+        max-width: 300px;
+      }
+      .social {
+        text-align: right;
+      }
+      .ikon {
+        display: flex;
+        gap: 10px;
+        justify-content: flex-end;
+      }
+      .ikon img {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+      .copyright {
+        font-size: 10px;
+        margin: 30px 0 20px;
+        text-align: center;
+      }
+
+      /* Responsive Design */
+      @media (max-width: 1024px) {
+        .isiContent {
+          width: 90%;
+        }
+        .footer-content {
+          gap: 100px;
+        }
+      }
+
+      @media (max-width: 768px) {
+        .hero img {
+          width: 150px;
+        }
+        .isiContent {
+          width: 95%;
+          padding: 15px;
+        }
+        .footer-content {
+          flex-direction: column;
+          gap: 30px;
+        }
+        .social {
+          text-align: left;
+        }
+        .ikon {
+          justify-content: flex-start;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .nav img {
+          width: 50px;
+          margin-left: 5px;
+        }
+        .logo span {
+          font-size: 12px;
+          margin-left: 5px;
+        }
+        .hero img {
+          width: 120px;
+        }
+        .isiContent h1 {
+          font-size: 20px;
+        }
+        .isiContent p {
+          font-size: 14px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="nav">
+      <div class="logo">
+        <img src="image/download-ai-brush-removebg-v5xupvjrj.png" alt="" />
+        <span><p>FATHUR RIZKY ASSANI</p></span>
+      </div>
+    </header>
+
+    <section class="hero">
+      <img
+        src="image/mysql-icon_hd-removebg.png"
+        alt="HTML Icon"
+        width="200px"
+      />
+    </section>
+    <section class="content">
+      <div class="isiContent">
+        <h1>Experience With MySql</h1>
+        <p>
+          I have developed strong MySQL skills, particularly in writing and
+          optimizing SQL queries for various database operations. From the
+          examples I've worked on, I have a solid understanding of basic
+          operations like SELECT, INSERT, UPDATE, and DELETE, as well as
+          aggregate functions including COUNT, SUM, AVG, MIN, and MAX. I've
+          practiced using WHERE clauses for data filtering, GROUP BY for data
+          grouping, and HAVING for filtering aggregate results. Additionally,
+          I'm comfortable with data sorting using ORDER BY (both ascending and
+          descending) and limiting query results with LIMIT. Concrete examples
+          include queries to find employees with highest/lowest salaries,
+          calculate average salaries per department, and display data with
+          specific criteria.
+        </p>
+
+        <p>
+          My experience also includes complex table joins (JOIN), including
+          INNER JOIN, LEFT JOIN, and subqueries to access data from multiple
+          related tables. I've created queries connecting employees,
+          departments, and job_history tables to extract information such as
+          employee job histories or lists of departments with highest salaries.
+          My understanding of table aliasing helps simplify queries involving
+          multiple tables. I've also practiced using subqueries in both WHERE
+          and FROM clauses, such as finding employees with salaries above their
+          department average or displaying department data containing employees
+          with specific criteria.
+        </p>
+
+        <p>
+          At the database design level, I have experience creating
+          entity-relationship diagrams (ERD) covering entities like semesters,
+          courses, professors, and their relationships. I understand database
+          normalization concepts up to third normal form (3NF) and can apply
+          them in database schema design. From the diagrams I've created, you
+          can see my understanding of relationship cardinality (one-to-one,
+          one-to-many, many-to-many) and use of primary keys/foreign keys to
+          maintain referential integrity. I'm also familiar with creating views
+          to simplify access to complex data and using indexes to improve query
+          performance.
+        </p>
+
+        <p>
+          For more advanced database operations, I've studied transaction
+          techniques to maintain data consistency, as well as basics of stored
+          procedures and triggers. I also understand the importance of database
+          security by implementing proper access rights and input sanitization
+          to prevent SQL injection. My experience includes query optimization
+          with EXPLAIN to analyze execution plans, as well as strategic indexing
+          techniques to speed up queries on large tables. I continue to develop
+          these skills by learning more advanced MySQL features like window
+          functions, CTEs (Common Table Expressions), and table partitioning.
+        </p>
+
+        <p>
+          Overall, I have a strong foundation in SQL and MySQL database
+          administration. My skills range from database design, writing complex
+          queries, to performance optimization. I'm ready to apply these skills
+          in database-driven application development requiring efficient and
+          reliable data manipulation. Moving forward, I plan to deepen my
+          knowledge of database clustering, replication, and backup/recovery
+          techniques at enterprise scale.
+        </p>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer-content">
+        <div>
+          <h1>FATHUR RIZKY ASSANI</h1>
+          <p>
+            A Junior Web Developer with hands-on experience in frontend and
+            backend. Skilled in creating responsive interfaces, managing
+            databases, and deploying static sites via GitHub.
+          </p>
+        </div>
+        <div class="social">
+          <h1>SOCIAL</h1>
+          <div class="ikon">
+            <span
+              ><a href="https://github.com/CallMeFG/" target="_blank"
+                ><img src="image/github 2 hd.jpg" alt="" width="30px" /></a
+            ></span>
+            <span
+              ><a
+                href="https://www.instagram.com/rzky.sn_?igsh=MTR6YmF0anFnNjdpZg=="
+                target="_blank"
+                ><img
+                  src="image/instagram_icon hd.png"
+                  alt=""
+                  width="30px" /></a
+            ></span>
+            <span
+              ><a
+                href="https://x.com/RizkyAs_Dev?t=npf2_tY-G8UJKmAffGDLmA&s=09"
+                target="_blank"
+                ><img src="image/X_icon hd.png" alt="" width="30px" /></a
+            ></span>
+            <span
+              ><a
+                href="https://www.linkedin.com/in/fathur-rizky-assani-7348b0307?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                target="_blank"
+                ><img src="image/linked_icon hd.jpg" alt="" width="30px" /></a
+            ></span>
+          </div>
+        </div>
+      </div>
+      <span style="font-size: 10px; margin-top: 100px; margin-bottom: 20px"
+        ><p>&copy;Copyright 2025. Made by <u>Fathur Rizky Assani</u></p></span
+      >
+    </footer>
+  </body>
+</html>
