@@ -1,35 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portofolio</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header class="nav">
-      <div class="logo">
-        <img src="image/download-ai-brush-removebg-v5xupvjrj.png" alt="" />
-        <span style="margin-left: 10px; font-size: 14px; font-weight: 600"
-          ><p>FATHUR RIZKY ASSANI</p></span
-        >
-      </div>
-      <div class="menu">
-        <ul>
-          <li><a href="#home" target="_self">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#Experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </header>
-    <main>
-      <section class="hero" id="home">
-        <h1>Welcome To my Portofolio</h1>
-        <p>Selamat datang di portofolio saya!</p>
-        <p>. . .</p>
-      </section>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="nav">
+    <div class="logo">
+      <img src="image/download-ai-brush-removebg-v5xupvjrj.png" alt="">
+      <span><p>FATHUR RIZKY ASSANI</p></span>
+    </div>
+    <div class="menu">
+      <ul>
+        <li><a href="#home" target="_self">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#Experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+    <div class="hamburger" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </header>
+  <main>
+    <section class="hero" id="home">
+      <h1>Welcome To my Portfolio</h1>
+      <p>Selamat datang di portofolio saya!</p>
+      <p>. . .</p>
+    </section>
       <section class="content1" id="about">
         <div class="about">
           <h1>ABOUT ME</h1>
@@ -306,22 +309,29 @@
     </footer>
   </body>
   <script>
+    // Toggle menu for mobile
+    function toggleMenu() {
+      const menu = document.querySelector('.menu ul');
+      menu.classList.toggle('active');
+    }
+
+    // Form validation
     document.querySelector("form").addEventListener("submit", function (event) {
       let isValid = true;
 
       document.querySelectorAll("input, textarea").forEach(function (field) {
         if (field.value.trim() === "") {
           isValid = false;
-          field.style.border = "2px solid red"; // Memberi efek border merah
+          field.style.border = "2px solid red";
         } else {
-          field.style.border = "2px solid blue"; // Jika terisi, border hijau
+          field.style.border = "2px solid blue";
         }
       });
 
       if (!isValid) {
-        event.preventDefault(); // Mencegah form terkirim jika ada input kosong
+        event.preventDefault();
       } else {
-        setTimeout(() => location.reload(), 100); // Refresh setelah 0.5 detik jika valid
+        setTimeout(() => location.reload(), 100);
       }
     });
   </script>
