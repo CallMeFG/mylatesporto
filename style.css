@@ -37,6 +37,11 @@ body {
   display: flex;
   align-items: center;
 }
+.logo span {
+  margin-left: 10px;
+  font-size: 14px;
+  font-weight: 600;
+}
 .menu{
   display: flex;
   align-items: center;
@@ -58,6 +63,19 @@ body {
 .menu a:hover {
   color: #6c4cf6;
 }
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.hamburger span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  margin: 5px 0;
+  transition: all 0.3s ease;
+}
 /* hero */
 .hero {
   display: flex;
@@ -66,6 +84,95 @@ body {
   align-items: center;
   height: 700px;
   font-size: 35px;
+}
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .menu {
+    margin-right: 50px;
+  }
+  
+  .menu ul {
+    gap: 30px;
+  }
+}
+@media (max-width: 768px) {
+  .menu {
+    position: fixed;
+    top: 60px;
+    left: -100%;
+    width: 100%;
+    height: calc(100vh - 60px);
+    background-color: white;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease;
+    margin-right: 0;
+  }
+  .menu.active {
+    left: 0;
+  }
+  
+  .menu ul {
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+  }
+  
+  .hamburger {
+    display: block;
+    margin-right: 20px;
+  }
+  
+  .hero {
+    height: 500px;
+    font-size: 28px;
+  }
+  
+  .isi {
+    padding: 50px !important;
+    gap: 50px !important;
+    flex-direction: column;
+  }
+  
+  .posting1, .posting2, .posting3 {
+    width: 100% !important;
+    max-width: 100% !important;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .posting1 img, .posting2 img, .posting3 img {
+    margin-right: 0 !important;
+    margin-bottom: 20px;
+  }
+  
+  .contact {
+    width: 80% !important;
+  }
+  
+  .footer-content {
+    gap: 100px !important;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+@media (max-width: 480px) {
+  .hero {
+    font-size: 24px;
+    height: 400px;
+  }
+  
+  .contact {
+    width: 90% !important;
+    padding: 20px !important;
+  }
+  
+  .hubungi, .contact button {
+    width: 100% !important;
+  }
 }
 /* content 1 */
 .content1 {
